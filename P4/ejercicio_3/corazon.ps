@@ -1,0 +1,73 @@
+%!
+
+% Dibujar el contorno de la tarjeta de visita
+newpath
+0.95 0.95 0.95 setrgbcolor       % Establecer el color a gris
+
+100 350 moveto
+425 0 rlineto
+0 225 rlineto
+-425 0 rlineto
+
+fill
+
+closepath
+stroke
+
+% Corazón
+% Círculos
+newpath
+    1 0.4 1 setrgbcolor        % Establecer el color a un tono de rosa
+    % x   y   R   angI angF
+    160  500 45  0    205   arc % Semicírculo corazón derecha
+
+    % x   y   R   angI angF
+    240 500 45  -25  180   arc % Semicírculo corazón derecha
+    fill
+stroke
+
+% Triángulo
+newpath
+    1 0.4 1 setrgbcolor        % Establecer el color al de los semicírculos
+
+    281 481 moveto
+    -80 -120 rlineto
+    -81.75 120 rlineto
+    closepath
+
+    fill
+stroke
+
+% Escribir el texto con distintos tonos de gris
+/Times-Roman findfont
+13 scalefont
+setfont
+
+  newpath
+  0.8 setgray
+  300 450 moveto
+  (La belleza no es nada, no permanece) show
+  stroke
+
+  newpath
+  0.6 setgray
+  300 420 moveto
+  (no sabes la suerte que tienes sin belleza) show
+  stroke
+
+  newpath
+  0.3 setgray
+  300 390 moveto
+  (Porque si le gustas a alguien,) show
+  stroke
+
+  newpath
+  0.0 setgray
+  300 360 moveto
+  (Sabes que es por otra cosa) show
+  stroke
+
+
+
+
+showpage

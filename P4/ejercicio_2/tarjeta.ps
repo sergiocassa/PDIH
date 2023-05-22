@@ -1,0 +1,118 @@
+%!
+
+% Dibujar el contorno de la tarjeta de visita
+newpath
+0.9 0.9 0.9 setrgbcolor       % Establecer el color a naranja
+
+100 350 moveto
+400 0 rlineto
+0 225 rlineto
+-400 0 rlineto
+
+fill
+
+closepath
+stroke
+
+% Dibujar el contorno de la fotografía
+
+1 1 0.5 setrgbcolor       % Establecer el color a amarillo
+% x   y   R angI angF
+  200 450 60 0    360  arc  % Círculo para el pomo de la puerta
+fill                       % Colorear el interior de la figura
+
+stroke                     % Finalizar el path de la puerta
+
+%Escribir el texto deseado
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+15 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 500 moveto			% colocar el curso en el punto deseado
+(Drago Kovacevic) show    	      % escribir el texto 
+stroke
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 490 moveto			% colocar el curso en el punto deseado
+(Ejecutivo de Cuentas) show    	      % escribir el texto 
+stroke
+
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 450 moveto			% colocar el curso en el punto deseado
+(Paseo de la Castellana, 141) show    	      % escribir el texto 
+stroke
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 440 moveto			% colocar el curso en el punto deseado
+(Local 2-Edificio Cuzcco IV) show    	      % escribir el texto 
+stroke
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 430 moveto			% colocar el curso en el punto deseado
+(28046 Madrid) show    	      % escribir el texto 
+stroke
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 420 moveto			% colocar el curso en el punto deseado
+(Telf. 914 174 550/669 896 224) show    	      % escribir el texto 
+stroke
+
+/Helvetica-Bold findfont	% seleccionar el tipo de fuente
+9 scalefont			% seleccionar el tamaño de fuente (20 puntos)
+setfont					% establecer este tipo de letra como el actual
+
+newpath
+0.0 setgray				% comenzar un nuevo elemento de página
+300 410 moveto			% colocar el curso en el punto deseado
+(dragp@serotel.es) show    	      % escribir el texto 
+stroke
+
+% Insertar "fotografía" en el contorno
+
+175 425 translate
+50 50 scale
+12 10  8  [12 0 0 -10 0 10]
+{<
+eeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeee
+eeffffffffffffffffffffee
+eeffff0000ffff0000ffffee
+eeffffffffffffffffffffee
+eeffffffffffffffffffffee
+eeffff00ffffffff00ffffee
+eeffffff00000000ffffffee
+eeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeee
+>}
+image
+
+showpage

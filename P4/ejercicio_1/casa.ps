@@ -1,0 +1,81 @@
+%!
+
+% Dibujar el recuadro de la casa
+newpath                    % Iniciar el path del rectángulo 
+1 0.7 0.4 setrgbcolor       % Establecer el color a naranja
+
+100 200 moveto               % Mover el cursor al punto (x,y)=(100,200)
+500 200 lineto              % Trazar línea 
+500 500 lineto             % Trazar línea 
+100 500 lineto             % Trazar línea 
+closepath                  % Cerrar el rectángulo
+
+fill                       % Colorear el interior de la figura
+stroke                     % Finalizar el path del rectángulo 
+
+
+% Dibujar el tejado de la casa
+newpath                    % Iniciar el path del triangulo 
+0.33 0 0 setrgbcolor       % Establecer el color  a marrón
+
+60 500 moveto               % Mover el cursor al punto (x,y)=(60, 500)
+540 500 lineto              % Trazar línea 
+300 625 lineto             % Trazar línea  
+closepath                  % Cerrar el triangulo
+
+fill                       % Colorear el interior de la figura
+stroke                     % Finalizar el path del tejado 
+
+% Dibujar la puerta de la casa
+newpath                    % Iniciar el path del rectángulo 
+0.33 0 0 setrgbcolor       % Establecer el color a marrón
+
+275 200 moveto               % Mover el cursor al punto (x,y)=(275, 200)
+325 200 lineto              % Trazar línea 
+325 300 lineto             % Trazar línea 
+275 300 lineto             % Trazar línea 
+closepath                  % Cerrar el rectángulo
+
+fill                       % Colorear el interior de la figura
+ 
+% Dibujar el pomo puerta
+
+1 1 0.33 setrgbcolor       % Establecer el color a amarillo
+% x   y   R angI angF
+  280 250 5 0    360  arc  % Círculo para el pomo de la puerta
+fill                       % Colorear el interior de la figura
+
+stroke                     % Finalizar el path de la puerta
+
+% Dibujar las ventanas de la casa
+newpath                    % Iniciar el path del rectángulo 
+0.83 1 1 setrgbcolor       % Establecer el color a azul
+
+150 400 moveto               % Mover el cursor al punto (x,y)=(100,200)
+200 400 lineto              % Trazar línea 
+200 450 lineto             % Trazar línea 
+150 450 lineto             % Trazar línea 
+closepath                  % Cerrar el rectángulo
+
+fill                       % Colorear el interior de la figura
+stroke                     % Finalizar el path del rectángulo 
+
+newpath                    % Iniciar el path del rectángulo 
+0.83 1 1 setrgbcolor       % Establecer el color a azul
+
+400 400 moveto               % Mover el cursor al punto (x,y)=(100,200)
+450 400 lineto              % Trazar línea 
+450 450 lineto             % Trazar línea 
+400 450 lineto             % Trazar línea 
+closepath                  % Cerrar el rectángulo
+
+fill                       % Colorear el interior de la figura
+stroke                     % Finalizar el path del rectángulo 
+
+0.83 1 1 setrgbcolor       % Establecer el color a azul
+% x   y   R angI angF
+  300 562 30 0    360  arc  % Círculo para la ventana del tejado
+fill                       % Colorear el interior de la figura
+stroke                     % Finalizar el path de la ventana
+
+showpage
